@@ -1,0 +1,45 @@
+<div class="container mt-3">
+    
+    <h1 class="text-danger fw-bold">Update Contact</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aliquam odio impedit nesciunt, ipsa molestiae soluta ab qui voluptas rem.</p>
+
+
+
+
+
+
+<div class="row d-flex flex-row">
+    <div class="col-sm-4">
+
+        
+        <input [(ngModel)]="author.name" class="form-control mb-2" type="text" placeholder="name">
+        
+        <input (change)="selectPhoto($event)"  class="form-control mb-2" type="file" placeholder="photo">
+        
+        <input [(ngModel)]="author.email" class="form-control mb-2" type="text" placeholder="email">
+        
+        <input [(ngModel)]="author.mobile" class="form-control mb-2" type="number" placeholder="mobile">
+        
+        <input [(ngModel)]="author.company" class="form-control mb-2" type="text" placeholder="company">
+        
+        <input [(ngModel)]="author.title"  class="form-control mb-2" type="text" placeholder="title">
+        
+       
+
+        <button (click)="update()" class="btn btn-danger mt-2">create</button>
+        <a class="btn btn-dark mt-2 ms-2" routerLink="/contact/admin">close</a></div>
+
+        <div class="col-sm-4">
+            <img [src]=" 'http://127.0.0.1:3000/getimage/' + author.image" alt="photo">
+           </div>
+    
+        </div>
+   
+      
+
+
+
+</div>
+
+    

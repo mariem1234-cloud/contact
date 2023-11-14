@@ -1,0 +1,41 @@
+<div class="container mt-3">
+    
+    <h1 class="text-danger fw-bold">Create Contact</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aliquam odio impedit nesciunt, ipsa molestiae soluta ab qui voluptas rem.</p>
+
+
+
+
+
+
+<div class="row">
+    <div class="col-sm-4">
+
+        
+        <input [(ngModel)]="author.name" class="form-control mb-2" type="text" placeholder="name">
+        
+        <input  (change)="select($event)" class="form-control mb-2" type="file" placeholder="photo">
+        
+        <input  [(ngModel)]="author.email" class="form-control mb-2" type="text" placeholder="email">
+        
+        <input  [(ngModel)]="author.mobile" class="form-control mb-2" type="number" placeholder="mobile">
+        
+        <input  [(ngModel)]="author.company" class="form-control mb-2" type="text" placeholder="company">
+        
+        <input  [(ngModel)]="author.title" class="form-control mb-2" type="text" placeholder="title">
+        
+      
+
+        <button (click)="create()" class="btn btn-danger mt-2" routerlink="/contact/admin">create</button>
+        <a class="btn btn-dark mt-2 ms-2" routerLink="/contact/admin">close</a>
+
+    </div>
+
+   
+
+
+</div>
+</div>
+
+    

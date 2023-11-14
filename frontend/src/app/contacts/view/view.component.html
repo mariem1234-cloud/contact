@@ -1,0 +1,29 @@
+<div class="container mt-3">
+
+    <h1 class="text-danger fw-bold">View Contact</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo esse quam laborum cum sint rem iure excepturi velit, unde dignissimos magnam voluptatibus sapiente architecto reprehenderit dolorem placeat magni similique ullam!</p>
+
+
+<div class="row align-items-center">
+    <div class="col-sm-4">
+        
+        <img [src]=" 'http://127.0.0.1:3000/getimage/' + author.image " alt="photo"><br>
+
+       
+    <a class="btn btn-danger mt-3" routerLink="/contact/admin"> <i class="fa fa-arrow-left" aria-hidden="true">
+        Back</i></a>
+
+    </div>
+
+    <div class="col-sm-6">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-danger">Name: <span class="fw-bold">{{author.name}}</span></li>
+            <li class="list-group-item list-group-item-danger">Email: <span class="fw-bold">{{author.email}}</span></li>
+            <li class="list-group-item list-group-item-danger">Mobile: <span class="fw-bold">{{author.mobile}}</span></li>
+            <li class="list-group-item list-group-item-danger">Company: <span class="fw-bold">{{author.company}}</span></li>
+            <li class="list-group-item list-group-item-danger">Title: <span class="fw-bold">{{author.title}}</span></li>
+        </ul>
+    </div>
+</div>
+
+</div>
